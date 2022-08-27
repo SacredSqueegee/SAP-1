@@ -10,11 +10,13 @@ The Microcode ROM has its own python file for generating it.
 In the documentation folder is a PDF going over the specification for the instructions and micro-code
   - At the end of the document is a more detailed description of the instructions on the CPU
 
-Last but not least there is an assembler written in python in the assembler folder.
+---
+
+###Last but not least there is an assembler written in python in the assembler folder.
   - Running the file with -h or --help should dispaly the usage information
   - Hopefully if you decide to add new instructions/micro-ops it will be somewhat easy to add that in
 
-More info on the assembler:
+### More info on the assembler:
   - ';' are treated as comments. Anything after them is completely ignored
   - only one instruction per line
   - instructions can be what ever case you want. 'NoP' is completely valid.
