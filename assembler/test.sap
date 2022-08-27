@@ -1,3 +1,12 @@
+; This was my first program for the SAP-1
+; Why is it so trashy??? Well I made it that way
+; to hopefully stress test the assembler... Why
+; not delete it? IDK to be honest, it seemed easier
+; to just add this comment explaining the exsistance
+; of this file... Maybe it'll make a good RE exercise
+; and you should tr and figure out what it does
+; without assembling it and running it...
+
 ; This is a comment
 
 lda 0xf
