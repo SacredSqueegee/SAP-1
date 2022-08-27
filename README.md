@@ -36,8 +36,9 @@ In the documentation folder is a PDF going over the specification for the instru
   - 'set' directive. This fancy "instruction" will set any byte in memory to some value
     - The 'set' directive works like this: SET 0xf, 0xff
       - This sets address 15 to 255
-      - There are checks in the assembler that wont let you write to the program section of RAM. So don't over write your code with these things
-      - Also, the comma is optional so if you just want to use a space you can.
+      - There are checks in the assembler that wont let you write to the program section of RAM. So don't over write your code with these things.
+      - The program section of code is calculated each time and is only the size of how many instructions make up your program.
+      - Also, the comma is optional so if you want to use a space you can.
   - There is "some" error checking. it is very minimal and sucky but should keep you from making a few basic mistakes.
     - This is very much a programmer be aware situation
   - One more thing, any integer used can be in decimal or hex. If you want to use hex you must prefix the value with '0x'
