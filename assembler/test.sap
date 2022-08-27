@@ -1,0 +1,23 @@
+; This is a comment
+
+lda 0xf
+set 0xf, 255
+JZ      halt        ; Jump to halt tag if ZF set
+
+sub 14
+out
+jmp 0x1
+
+halt:          ;Halt section
+    hlt
+
+label1:
+label2:
+
+JmP label2
+
+set 14,     0x1
+
+nop
+
+; End Program
