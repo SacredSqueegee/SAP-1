@@ -1,0 +1,19 @@
+; This program counts from 0 to 255 and then halts.
+
+; Setup constant needed
+set 0xf, 1
+
+
+; Begin our program
+ldi 0x0
+
+
+loop:
+jc halt
+out
+add 0xf
+jmp loop
+
+
+halt:
+hlt

@@ -1,0 +1,20 @@
+; This program decrements from 255 to 0 and then halts.
+
+; Setup constant needed
+set 0xf, 1
+set 0xe, 0xff
+
+
+; Begin our program
+lda 0xe
+
+
+loop:
+out
+jz halt
+sub 0xf
+jmp loop
+
+
+halt:
+hlt

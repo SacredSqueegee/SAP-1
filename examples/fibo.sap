@@ -1,0 +1,35 @@
+; This program computes fibonacci numbers until it overflows
+
+set 0xf, 1      ; current number
+set 0xe, 0      ; n-1
+set 0xd, 0      ; n-2
+
+; Start with 0
+ldi 0
+out
+
+; Begin our loop
+loop:
+
+jc halt         ; Jump if overflow
+out             ; Display current number
+
+; update previous number n-2
+lda 0xe
+sta 0xd
+
+; update previous number n-1
+lda 0xf
+sta 0xe
+
+; compute next number
+add 0xd
+sta 0xf
+
+; repeat
+jmp loop
+
+
+; End of program
+halt:
+hlt
