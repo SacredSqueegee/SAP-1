@@ -51,3 +51,6 @@ Example code is in the examples folder.
     - These are both valid:
       - ADD 0xa
       - ADD 10
+  - Oh, and negative numbers are not yet implemented in the assembeler so this would not work:
+    - ldi -4
+    - ldi -0x4
