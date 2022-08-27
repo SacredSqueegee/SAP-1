@@ -1,6 +1,10 @@
 # SAP-1
 Ben Eaters SAP-1 Implemented by Me.
 
+Recuirements:
+  - Logisim Evolution
+  - Python 10+
+
 The circuit was created with Logisim Evolution and is in the root directory.
 
 Also in the root directory are ROMs for the Output Control Unit (OCU) and Microcode.
