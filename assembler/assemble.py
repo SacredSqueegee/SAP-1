@@ -409,6 +409,10 @@ def argParse() -> typing.Tuple[FileProps]:
     inputFullPath = os.path.abspath(args.input_file)
     outputFullPath = os.path.abspath(args.output_file)
 
+    # Check for extension, if none, add '.bin'
+    if pathlib.Path(outputFullPath).suffix == '':
+        outputFullPath += '.bin'
+
     inputFile = FileProps(os.path.basename(inputFullPath), os.path.dirname(inputFullPath), inputFullPath)
     outputFile = FileProps(os.path.basename(outputFullPath), os.path.dirname(outputFullPath), outputFullPath)
     
