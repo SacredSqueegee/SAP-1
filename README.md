@@ -12,7 +12,7 @@ In the documentation folder is a PDF going over the specification for the instru
 
 ---
 
-###Last but not least there is an assembler written in python in the assembler folder.
+### Last but not least there is an assembler written in python in the assembler folder.
   - Running the file with -h or --help should dispaly the usage information
   - Hopefully if you decide to add new instructions/micro-ops it will be somewhat easy to add that in
 
