@@ -14,6 +14,8 @@ The Microcode ROM has its own python file for generating it.
 In the documentation folder is a PDF going over the specification for the instructions and micro-code
   - At the end of the document is a more detailed description of the instructions on the CPU
 
+Example code is in the examples folder.
+
 ---
 
 ### Last but not least there is an assembler written in python in the assembler folder.
