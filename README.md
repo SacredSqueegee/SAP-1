@@ -1,20 +1,27 @@
 # SAP-1
 Ben Eaters SAP-1 Implemented by Me.
 
+### Background:
+I went through and implemented Ben's CPU in Logisim Evolution trying to keep as true to the original architecture as possible. For the most part everything is the same except I kept/added a few extra control lines and instructions. While working on this project I wanted to document everything as much as possible and make adding additional functionality "easier" (you can only add so much functionality with 4 bytes of RAM and 24 control lines). Some of this functionality includes a microcode ROM programmer and an assembler. The goal with these two python programs was to make adding new instructions easier (microcode programmer), and make writing complex programs easier (assembler). The assembler is super basic but does include some nice features. I've added labels and set directives (allow you to set specific addresses in RAM to a value). There is also very basic error checking in the assembler so programmer beware.
+
+### CPU Overview:
+The entire CPU is emulated using Logisim Evolution. The microcode was implemented with a hybrid approach. The fetch cycle is hardwired while the instruction execution cycles are accomplished via a microcode ROM. A snippet of this can be seen in the first image below. I did try to document and comment the project as much as possible but kinda got lazy along the way as I wanted to move on to the next iteration. If something doesn't make sense or sounds like I had a stroke in the middle of a sentence let me know and I'll try to clarify and update documentation.
+
 ### Recuirements:
   - Logisim Evolution
   - Python 10+
 
-The circuit was created with Logisim Evolution and is in the root directory.
+### What's Included / Project Organization:
+The Logisim Evolution circuit file is located in the root directory.
 
 Also in the root directory are ROMs for the Output Control Unit (OCU) and Microcode.
 The Microcode ROM has its own python file for generating it.
   - This python file should hopefully make adding more instructions and micro-ops easier
 
 In the documentation folder is a PDF going over the specification for the instructions and micro-code
-  - At the end of the document is a more detailed description of the instructions on the CPU
+  - At the end of the document is a more detailed description of the instructions implemented on the CPU
 
-Example code is in the examples folder.
+Example code is in the examples folder and includes both assembly and machine code files.
 
 ---
 
