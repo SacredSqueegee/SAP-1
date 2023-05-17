@@ -1,5 +1,5 @@
 # SAP-1
-Ben Eaters SAP-1 Implemented by Me.
+A simple 8-bit cmputer inspired by Ben Eater's 8-bit computer.
 
 ### Recuirements:
   - Logisim Evolution
